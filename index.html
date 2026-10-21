@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Антон Букреев — интернет-маркетолог, Курск</title>
+<meta name="description" content="Интернет-маркетолог полного цикла: Яндекс Директ, VK Реклама, сайты на Tilda, веб-аналитика, дизайн рекламы. Кейсы с цифрами: заявки с ~12 до ~70 в месяц, конверсия от 243 ₽.">
+<meta name="author" content="Антон Букреев">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Антон Букреев — интернет-маркетолог">
+<meta property="og:description" content="Реклама, сайты, аналитика и дизайн. Кейсы и результаты в цифрах.">
+<meta property="og:image" content="img/portrait.webp">
+<meta property="og:locale" content="ru_RU">
+<meta name="theme-color" content="#EDEFEA">
+<link rel="icon" href="img/head-5.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Антон Букреев",
+  "jobTitle": "Интернет-маркетолог",
+  "address": {"@type": "PostalAddress", "addressLocality": "Курск", "addressCountry": "RU"},
+  "alumniOf": "Курский государственный университет",
+  "knowsAbout": ["Яндекс Директ", "VK Реклама", "Tilda", "Яндекс Метрика", "Веб-аналитика", "Графический дизайн", "Event-маркетинг"],
+  "sameAs": ["https://t.me/buk_okkk", "https://vk.ru/buk_okkk"]
+}
+</script>
+<style>
+:root{
+  --bg:#EDEFEA; --surface:#FFFFFF; --ink:#17191C; --muted:#5A6168; --line:#CDD2CB;
+  --accent:#0E6E62; --accent-ink:#FFFFFF; --accent-soft:#D5E6E1;
+  --display:"Unbounded",system-ui,sans-serif; --body:"Golos Text",system-ui,sans-serif;
+  --wrap:1180px; --r:14px;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#141719; --surface:#1D2124; --ink:#ECEEE9; --muted:#A3AAA6; --line:#30363A;
+    --accent:#4FC3B0; --accent-ink:#0B1F1C; --accent-soft:#1F3833;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 16px}
+@media (min-width:700px){.wrap{padding:0 32px}}
+.skip{position:absolute;left:-999px;top:8px;background:var(--surface);padding:8px 12px;z-index:50}
+.skip:focus{left:8px}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.logo{font:700 18px/1 var(--display);text-decoration:none;letter-spacing:-.01em}
+.nav{display:flex;gap:18px;margin-left:auto}
+.nav a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px}
+.nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font:600 15px/1 var(--body);text-decoration:none;border:1.5px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.btn--fill{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+.top .btn{padding:9px 16px;font-size:14px}
+@media (max-width:760px){.nav{display:none}.top .btn{margin-left:auto}}
+
+/* hero */
+.hero{padding:56px 0 40px}
+.hero .wrap{display:grid;gap:24px;align-items:center}
+@media (min-width:900px){.hero .wrap{grid-template-columns:1.25fr 1fr}}
+.name{font:700 clamp(46px,9.5vw,118px)/.92 var(--display);letter-spacing:-.035em;margin:0}
+.name span{display:block}
+.name span:last-child{padding-left:.55em;color:var(--accent)}
+.role{font:500 clamp(18px,2.2vw,22px)/1.35 var(--body);margin:28px 0 10px}
+.pitch{color:var(--muted);max-width:52ch;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.headbox{position:relative;justify-self:center;width:min(420px,82vw);aspect-ratio:1}
+.headbox::before{content:"";position:absolute;inset:8%;border-radius:50%;background:var(--accent-soft)}
+.headbox img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0}
+.headbox img.on{opacity:1}
+.headnote{text-align:center;color:var(--muted);font-size:14px;margin-top:6px}
+
+/* results */
+.results{padding:24px 0 72px}
+.results ul{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+@media (min-width:800px){.results ul{grid-template-columns:repeat(3,1fr)}}
+.results li{background:var(--surface);padding:26px 24px}
+.results b{display:block;font:700 clamp(30px,4vw,42px)/1.05 var(--display);letter-spacing:-.02em;margin-bottom:10px}
+.results span{color:var(--muted);font-size:15px;line-height:1.5}
+
+/* sections */
+section.block{padding:72px 0;border-top:1px solid var(--line)}
+.h2{font:700 clamp(30px,4.4vw,52px)/1.05 var(--display);letter-spacing:-.03em;margin:0 0 36px}
+.lead{color:var(--muted);max-width:60ch;margin:-20px 0 36px}
+
+/* timeline */
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;gap:6px 32px;padding:26px 0;border-bottom:1px solid var(--line)}
+.tl li:first-child{padding-top:0}
+@media (min-width:800px){.tl li{grid-template-columns:200px 1fr}}
+.tl .when{color:var(--muted);font-size:15px;padding-top:4px}
+.tl h3{font:600 21px/1.3 var(--body);margin:0}
+.tl .org{color:var(--accent);font-weight:500;margin:2px 0 10px}
+.tl ul{margin:0;padding-left:18px;color:var(--ink)}
+.tl ul li{display:list-item;padding:0;border:0;margin:4px 0}
+.tl .res{margin:12px 0 0;padding:10px 14px;background:var(--accent-soft);border-radius:10px;font-weight:500}
+
+/* projects */
+.group{margin-bottom:56px}
+.group:last-child{margin-bottom:0}
+#groups{margin-bottom:56px}
+.group h3{font:600 20px/1.3 var(--body);margin:0 0 18px;color:var(--muted)}
+.grid{display:grid;gap:18px}
+@media (min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;background:var(--surface);border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (min-width:1000px){.card--wide{grid-column:span 2}}
+.card .pic{aspect-ratio:4/3;background:var(--bg);overflow:hidden}
+.card--wide .pic{aspect-ratio:16/8}
+.card .pic img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .pic img{transform:scale(1.03)}
+@media (prefers-reduced-motion:reduce){.card .pic img{transition:none}.card:hover .pic img{transform:none}}
+.card .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card .meta{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:13.5px}
+.card .t{font:600 18px/1.3 var(--body)}
+.card .d{color:var(--muted);font-size:15px;line-height:1.5}
+.stats{display:flex;gap:22px;margin-top:4px}
+.stats > span{display:flex;flex-direction:column}
+.stats b{font:700 22px/1.1 var(--display);color:var(--accent)}
+.stats span{font-size:13px;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+.tag{font-size:12.5px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.personal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media (min-width:800px){.personal{grid-template-columns:repeat(3,1fr)}}
+.personal a{display:block;border-radius:10px;overflow:hidden;aspect-ratio:1;background:var(--surface)}
+.personal img{width:100%;height:100%;object-fit:cover}
+
+/* modal */
+dialog{border:0;padding:0;border-radius:18px;background:var(--surface);color:var(--ink);width:min(980px,calc(100vw - 24px));max-height:calc(100vh - 24px)}
+dialog::backdrop{background:rgba(10,12,14,.66)}
+.m{padding:28px 22px 30px;position:relative}
+@media (min-width:700px){.m{padding:40px 44px}}
+.m h3{font:700 clamp(22px,3vw,30px)/1.15 var(--display);letter-spacing:-.02em;margin:0 48px 18px 0}
+.m p{margin:0 0 14px;max-width:68ch}
+.m .close{position:absolute;top:14px;right:14px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:22px;cursor:pointer}
+.m .gal{display:grid;gap:12px;margin-top:22px}
+@media (min-width:700px){.m .gal{grid-template-columns:repeat(2,1fr)}}
+.m figure{margin:0}
+.m figure img{width:100%;border-radius:10px;background:var(--bg)}
+.m figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+.m .full{grid-column:1/-1}
+body.lock{overflow:hidden}
+
+/* tools */
+.tools{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.tools li{display:flex;align-items:center;gap:10px;padding:8px 14px 8px 8px;background:var(--surface);border:1px solid var(--line);border-radius:999px;font-size:15px;font-weight:500}
+.tools img{width:28px;height:28px;object-fit:contain}
+
+/* about */
+.about{display:grid;gap:36px}
+@media (min-width:900px){.about{grid-template-columns:360px 1fr}}
+.about .photo{border-radius:var(--r);overflow:hidden;filter:grayscale(1)}
+.about p{max-width:62ch;margin:0 0 16px}
+.facts{display:grid;gap:22px;margin-top:28px}
+@media (min-width:700px){.facts{grid-template-columns:1fr 1fr}}
+.facts h3{font:600 16px/1.3 var(--body);color:var(--muted);margin:0 0 8px}
+.facts ul{margin:0;padding:0;list-style:none}
+.facts li{margin:0 0 10px;line-height:1.45}
+.facts small{display:block;color:var(--muted);font-size:14px}
+
+/* contacts */
+.contact{padding:84px 0 96px;border-top:1px solid var(--line)}
+.contact .big{font:700 clamp(34px,6vw,76px)/1 var(--display);letter-spacing:-.035em;margin:0 0 30px;max-width:14ch}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top">buk_</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#experience">Опыт</a>
+      <a href="#projects">Проекты</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--fill" href="https://t.me/buk_okkk" target="_blank" rel="noopener">Написать в Telegram</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <h1 class="name"><span>Антон</span><span>Букреев</span></h1>
+        <p class="role">Интернет-маркетолог полного цикла, Junior+. Курск, работаю удалённо, в офисе или гибридно.</p>
+        <p class="pitch">Запускаю рекламу в Яндекс Директе и VK Рекламе, собираю сайты на Tilda, настраиваю аналитику и сам делаю дизайн рекламных материалов. Считаю результат в заявках и стоимости конверсии.</p>
+        <div class="cta">
+          <a class="btn btn--fill" href="https://t.me/buk_okkk" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a class="btn" href="#projects">Посмотреть проекты</a>
+        </div>
+      </div>
+      <div>
+        <div class="headbox" id="head" aria-hidden="true"></div>
+        <p class="headnote" id="headnote">Моя 3D-голова следит за курсором</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="results" aria-label="Результаты">
+    <div class="wrap">
+      <ul>
+        <li><b>12 → 70</b><span>заявок в месяц за год в КРООО «Диалог» — по всем каналам, после запуска онлайн-продвижения с нуля</span></li>
+        <li><b>243 ₽</b><span>за конверсию в лучшей кампании Яндекс Директа при конверсии сайта 3,6%</span></li>
+        <li><b>+100</b><span>учеников Академии ТОП за апрель–август 2025 благодаря мероприятиям и офлайн-привлечению</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <h2 class="h2">Опыт</h2>
+      <ol class="tl">
+        <li>
+          <div class="when">Октябрь 2025 — сейчас</div>
+          <div>
+            <h3>Маркетолог полного цикла</h3>
+            <div class="org">КРООО «Диалог», Курск</div>
+            <ul>
+              <li>Единственный маркетолог: раннее развитие, английский, частная начальная школа, логопеды, дефектологи, психологи.</li>
+              <li>Запустил онлайн-продвижение с нуля: до этого у организации с 30-летней историей было только сообщество ВКонтакте.</li>
+              <li>Сделал и продвигаю сайт на Tilda, выстроил воронку продаж, внедрил CRM и наладил работу менеджера по продажам.</li>
+              <li>Яндекс Директ: 8 кампаний за год, бюджет около 89 000 ₽, 10 600 кликов, около 200 конверсий.</li>
+              <li>Обновил визуальный стиль бренда, делаю рекламные материалы и контент для ВКонтакте, веду офлайн-продвижение.</li>
+            </ul>
+            <p class="res">Поток заявок вырос с ~12 до ~70 в месяц.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Февраль 2026 — сейчас</div>
+          <div>
+            <h3>Методист образовательных программ</h3>
+            <div class="org">КРОМО УОДЦ «Магистр»</div>
+            <ul>
+              <li>Координация мероприятий каникулярных смен для участников 12–17 лет.</li>
+              <li>Работа с партнёрами и подрядчиками: около 25 организаций-партнёров летней смены 2026.</li>
+              <li>Печатная продукция и мерч, вёрстка сборника тиражом 300 экземпляров.</li>
+            </ul>
+            <p class="res">Награда Комитета молодёжной политики Курской области.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Март — сентябрь 2025</div>
+          <div>
+            <h3>Event-маркетолог</h3>
+            <div class="org">Академия ТОП, Курск</div>
+            <ul>
+              <li>Мероприятия и мастер-классы для привлечения учеников, в том числе с Play Ventura и фестиваль «МОЛОКО».</li>
+              <li>Рекламные материалы: плакаты, раздатка, графика для сайта.</li>
+              <li>Запуск digital и офлайн-рекламы, команда промоутеров из старших учеников.</li>
+            </ul>
+            <p class="res">+100 учеников за апрель–август 2025.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">Декабрь 2022 — сейчас</div>
+          <div>
+            <h3>Преподаватель интернет-маркетинга, экономики и графического дизайна</h3>
+            <div class="org">Академия ТОП, Курск</div>
+            <ul>
+              <li>Интернет-маркетинг и экономика для студентов колледжа, включая блок о продающих карточках для маркетплейсов.</li>
+              <li>Дисциплина «Менеджмент в профессиональной деятельности».</li>
+              <li>Графический дизайн и 3D-моделирование для детей 7–16 лет.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" id="projects">
+    <div class="wrap">
+      <h2 class="h2">Проекты</h2>
+      <p class="lead">Нажмите на карточку, чтобы открыть кейс с подробностями и материалами.</p>
+      <div id="groups"></div>
+      <div class="group">
+        <h3>Личные работы</h3>
+        <div class="personal">
+          <a href="img/personal-1.webp" target="_blank" rel="noopener"><img src="img/personal-1.webp" alt="Иллюстрация: профиль лица с цветовыми пятнами" loading="lazy"></a>
+          <a href="img/personal-2.webp" target="_blank" rel="noopener"><img src="img/personal-2.webp" alt="Логотип .bardaak" loading="lazy"></a>
+          <a href="img/personal-3.webp" target="_blank" rel="noopener"><img src="img/personal-3.webp" alt="Дизайн главной страницы бренда одежды «ОЙЁЙ»" loading="lazy"></a>
+          <a href="img/personal-4.webp" target="_blank" rel="noopener"><img src="img/personal-4.webp" alt="Иллюстрация: тигр" loading="lazy"></a>
+          <a href="img/personal-5.webp" target="_blank" rel="noopener"><img src="img/personal-5.webp" alt="3D-леттеринг" loading="lazy"></a>
+          <a href="img/personal-6.webp" target="_blank" rel="noopener"><img src="img/personal-6.webp" alt="Постер с 3D-фигурой и типографикой" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="tools">
+    <div class="wrap">
+      <h2 class="h2">Инструменты</h2>
+      <ul class="tools" id="toolsList"></ul>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap about">
+      <img class="photo" src="img/portrait.webp" alt="Антон Букреев" loading="lazy" width="691" height="706">
+      <div>
+        <h2 class="h2">Обо мне</h2>
+        <p>Мне 22, живу в Курске. Получил экономическое образование, а в работе собрал вместе маркетинг, дизайн, преподавание и управление проектами.</p>
+        <p>Мне ближе всего задачи, где нужно привести заявки с нуля: разобраться в продукте, собрать сайт, запустить рекламу, проверить гипотезы и посчитать, что сработало. Ищу команду, где смогу отвечать за результат в заявках и продажах.</p>
+        <div class="facts">
+          <div>
+            <h3>Образование</h3>
+            <ul>
+              <li>Курский государственный университет, «Экономика и управление»<small>Бакалавр, 2026. Диплом: маркетинговая стратегия на основе анализа рынка</small></li>
+              <li>Курский государственный университет, магистратура<small>«Развитие личностного потенциала в образовании: цифровизация и персонализация», с 2026</small></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Курсы и языки</h3>
+            <ul>
+              <li>Generative AI for Marketers<small>Microsoft, 2026</small></li>
+              <li>Google Analytics с другими инструментами и источниками данных<small>Google, 2025</small></li>
+              <li>Английский<small>B1</small></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contacts">
+    <div class="wrap">
+      <h2 class="big">Обсудим вашу задачу?</h2>
+      <div class="links">
+        <a class="btn btn--fill" href="https://t.me/buk_okkk" target="_blank" rel="noopener">Telegram @buk_okkk</a>
+        <a class="btn" href="https://vk.ru/buk_okkk" target="_blank" rel="noopener">ВКонтакте</a>
+        <a class="btn" href="https://disk.yandex.ru/i/aO4PwBMK1miNnA" target="_blank" rel="noopener">Резюме в PDF</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">Антон Букреев, Курск, 2026</div></footer>
+
+<dialog id="modal" aria-labelledby="mTitle">
+  <div class="m">
+    <button class="close" type="button" aria-label="Закрыть">×</button>
+    <h3 id="mTitle"></h3>
+    <div id="mBody"></div>
+  </div>
+</dialog>
+
+<script>
+const GROUPS=[
+ {title:"Академия ТОП",items:[
+  {id:"moloko",label:"Event-маркетинг",date:"13.05.2025",name:"Фестиваль графического дизайна «МОЛОКО»",image:"moloko-cover",stats:[["50+","участников"],["≈20%","конверсия"]],tags:["организация","дизайн","партнёры"],
+   text:["13 мая 2025 года придумал и провёл фестиваль графического дизайна «МОЛОКО» — его планировалось сделать ежегодным.","Участвовали представители «Движения Первых» и все, кто прошёл предварительную регистрацию. С 16:00 до 19:00 шли мастер-классы по направлениям графического дизайна, в последний час участники в группах решали практические задания, а работы оценивало жюри.","В жюри вошли представители партнёров — «Пластелин-арт», «Жар-пицца», «Конти» и других организаций.","Пришли более 50 участников, конверсия составила около 20%."],
+   images:[["moloko-1","Афиша фестиваля"],["moloko-2","Участники фестиваля"]]},
+  {id:"top-design",label:"Дизайн",date:"2025",name:"Раздаточные материалы, плакаты и веб-графика",image:"top-design-cover",desc:"Промо каникулярных программ, баннеры рекламных кампаний, графика для сайта Академии ТОП.",tags:["дизайн","продвижение"],
+   text:["Раздаточные материалы, плакаты и графика для сайта — от промо каникулярных программ до баннеров рекламных кампаний."],
+   images:[["top-design-1",""],["top-design-2",""],["top-design-3",""],["top-design-4",""],["top-design-5",""],["top-design-6",""]]},
+  {id:"ventura",wide:true,label:"Event-маркетинг",date:"Весна 2025",name:"Серия весенних мастер-классов с Play Ventura",image:"ventura-cover",desc:"Плакаты в ТЦ Central Park, раздатка, графика для сайта и служба промоутеров из старших учеников.",tags:["организация","дизайн","продвижение"],
+   text:["Весной и летом 2025 года организовывал мастер-классы вместе с площадкой Play Ventura, чтобы привлечь новых учеников в Академию ТОП. Делал рекламные материалы: раздатку, плакаты для ТЦ Central Park и графику для сайта.","Параллельно организовал работу промоутеров из старших учеников: они общались с посетителями и собирали анкеты потенциальных клиентов для записи."],
+   images:[["ventura-1",""],["ventura-2",""],["ventura-3",""]]}
+ ]},
+ {title:"КРООО «Диалог»",items:[
+  {id:"dialog-rebrand",wide:true,label:"Ребрендинг и digital",date:"Октябрь 2025",name:"Комплексное обновление digital-образа организации",image:"dialog-rebrand-cover",desc:"Новая айдентика, сайт на Tilda, обновлённые соцсети, CRM и воронка продаж.",tags:["дизайн","продвижение","организация"],
+   flow:[
+    ["p","В октябре 2025 года провёл маркетинговую экспертизу КРООО «Диалог» и нашёл причины, которые мешали продвигать услуги. Дальше эти проблемы закрывал в рамках обновления всей маркетинговой системы."],
+    ["p","Первым этапом разработал новую айдентику, на её основе полностью обновил сайт и социальные сети."],
+    ["img","dialog-old-site","Старый сайт: неинтерактивный, с устаревшей информацией и без единого оформления"],
+    ["img","dialog-variants","Варианты оформления"],
+    ["img","dialog-logo","Новый логотип"],
+    ["img","dialog-new-site","Обновлённый сайт"],
+    ["a","https://dialogvkurske.ru/","Открыть сайт dialogvkurske.ru"],
+    ["p","Следующий этап — онлайн-имидж: актуальная информация на картах, SEO-оптимизация нового сайта, системная работа с соцсетями, новые форматы продвижения и партнёры."],
+    ["p","Параллельно перестроил внутренние процессы: внедрил CRM, оптимизировал работу менеджера, описал воронку продаж и разработал маркетинговую стратегию. За год поток заявок вырос с ~12 до ~70 в месяц."]
+   ]},
+  {id:"dialog-ads",label:"Реклама",date:"2025–2026",name:"Рекламные кампании в Яндекс Директе и VK Рекламе",image:"dialog-ads-cover",stats:[["243 ₽","лучшая цена конверсии"],["~200","конверсий за год"]],tags:["реклама","дизайн"],
+   text:["До начала работ у организации не было заявок из интернет-каналов.","За год запустил 8 кампаний в Яндекс Директе с бюджетом около 89 000 ₽: 10 600 кликов и около 200 конверсий, средняя стоимость конверсии около 450 ₽. Лучшая кампания дала 243 ₽ за конверсию при конверсии сайта 3,6%.","Ниже — примеры креативов, которые использовались в кампаниях."],
+   images:[["dialog-ads-1",""],["dialog-ads-2",""],["dialog-ads-3",""],["dialog-ads-4",""]]},
+  {id:"dialog-design",label:"Дизайн",date:"2025–2026",name:"Материалы для постов, ролл-апы и сайта",image:"dialog-design-cover",desc:"Посты ВКонтакте, ролл-апы, афиши и баннеры для сайта.",tags:["дизайн"],
+   text:["Материалы для постов, ролл-апы и графика для сайта."],
+   images:[["dialog-design-1",""],["dialog-design-2",""],["dialog-design-3",""],["dialog-design-4",""],["dialog-design-5",""],["dialog-design-6",""]]}
+ ]},
+ {title:"КРОМО УОДЦ «Магистр»",items:[
+  {id:"songbook",label:"Дизайн",date:"Лето 2026",name:"Вёрстка сборника песен",image:"magistr-songbook-1",stats:[["300","экземпляров"]],tags:["дизайн","печать"],
+   text:["Для летней смены «Магистра» 2026 года разработал и подготовил к печати традиционный песенник организации.","Смена проходила под темой «Лаборатория снов Мнемозины», и я связал оформление издания с атмосферой смены.","Вёрстка и допечатная подготовка — на мне. Напечатали 300 экземпляров, их получили все участники смены."],
+   images:[["magistr-songbook-1",""],["magistr-songbook-2",""],["magistr-songbook-3",""]]},
+  {id:"partners",label:"Партнёры",date:"Лето 2026",name:"Партнёры летней смены 2026",image:"magistr-partners",stats:[["≈25","организаций-партнёров"]],tags:["партнёрства"],
+   flow:[
+    ["p","Для смены нужна была система поощрения участников. Я искал партнёров, договаривался о сотрудничестве и привлекал призы и подарки."],
+    ["p","В итоге партнёрами смены стали около 25 организаций Курской области."],
+    ["a","https://vk.ru/wall-980469_13822","Пост с партнёрами ВКонтакте"]
+   ]}
+ ]}
+];
+const TOOLS=[["yandex-direct","Яндекс Директ"],["yandex-metrika","Яндекс Метрика"],["vk-ads","VK Реклама"],["tilda","Tilda"],["figma","Figma"],["photoshop","Photoshop"],["illustrator","Illustrator"],["indesign","InDesign"],["after-effects","After Effects"],["blender","Blender"],["capcut","CapCut"],["canva","Canva"],["chatgpt","ChatGPT"],["claude","Claude"],["excel","Excel"],["word","Word"],["html","HTML"]];
+
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const img=k=>"img/"+k+".webp";
+const ALL={};
+document.getElementById("groups").innerHTML=GROUPS.map(g=>`<div class="group"><h3>${esc(g.title)}</h3><div class="grid">${g.items.map(w=>{ALL[w.id]=w;return `
+ <button class="card${w.wide?" card--wide":""}" type="button" data-id="${w.id}">
+  <span class="pic"><img src="${img(w.image)}" alt="${esc(w.name)}" loading="lazy"></span>
+  <span class="body">
+   <span class="meta"><span>${esc(w.label)}</span><span>${esc(w.date||"")}</span></span>
+   <span class="t">${esc(w.name)}</span>
+   ${w.desc?`<span class="d">${esc(w.desc)}</span>`:""}
+   ${w.stats?`<span class="stats">${w.stats.map(([n,c])=>`<span><b>${esc(n)}</b> <span>${esc(c)}</span></span>`).join("")}</span>`:""}
+   <span class="tags">${(w.tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</span>
+  </span>
+ </button>`}).join("")}</div></div>`).join("");
+
+document.getElementById("toolsList").innerHTML=TOOLS.map(([k,n])=>`<li><img src="img/tools/${k}.png" alt="" width="28" height="28" loading="lazy">${esc(n)}</li>`).join("");
+
+const modal=document.getElementById("modal"),mTitle=document.getElementById("mTitle"),mBody=document.getElementById("mBody");
+function fig(k,cap,full){return `<figure${full?' class="full"':""}><a href="${img(k)}" target="_blank" rel="noopener"><img src="${img(k)}" alt="${esc(cap||mTitle.textContent)}" loading="lazy"></a>${cap?`<figcaption>${esc(cap)}</figcaption>`:""}</figure>`}
+function openWork(id){
+  const w=ALL[id]; if(!w) return;
+  mTitle.textContent=w.name;
+  if(w.flow){
+    mBody.innerHTML=`<div class="gal">${w.flow.map(b=>b[0]==="p"?`<p class="full">${esc(b[1])}</p>`:b[0]==="img"?fig(b[1],b[2],true):`<p class="full"><a class="btn" href="${b[1]}" target="_blank" rel="noopener">${esc(b[2])}</a></p>`).join("")}</div>`;
+  }else{
+    mBody.innerHTML=(w.text||[]).map(p=>`<p>${esc(p)}</p>`).join("")+`<div class="gal">${(w.images||[]).map(([k,c])=>fig(k,c)).join("")}</div>`;
+  }
+  modal.showModal(); document.body.classList.add("lock"); modal.querySelector(".m").scrollTop=0;
+}
+document.addEventListener("click",e=>{const c=e.target.closest("[data-id]"); if(c) openWork(c.dataset.id);});
+modal.querySelector(".close").addEventListener("click",()=>modal.close());
+modal.addEventListener("click",e=>{if(e.target===modal) modal.close();});
+modal.addEventListener("close",()=>document.body.classList.remove("lock"));
+
+/* 3D head following the pointer: frames on a 3x3 grid (rows: up/level/down, cols: left/front/right) */
+(function(){
+  const box=document.getElementById("head"), note=document.getElementById("headnote");
+  const grid=[[1,5,9],[2,5,8],[3,7,6]];
+  const frames={};
+  [1,2,3,5,6,7,8,9].forEach(n=>{const i=new Image(); i.src=img("head-"+n); i.alt=""; i.decoding="async"; box.appendChild(i); frames[n]=i;});
+  let cur=null; const show=n=>{if(cur===n)return; if(cur)frames[cur].classList.remove("on"); frames[n].classList.add("on"); cur=n;};
+  show(5);
+  const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const fine=matchMedia("(pointer: fine)").matches;
+  if(reduce){note.textContent="3D-модель моей головы";return;}
+  if(!fine){
+    note.textContent="Нажмите на голову, чтобы повернуть её";
+    const order=[5,8,9,6,7,3,2,1]; let i=0;
+    box.parentElement.addEventListener("click",()=>{i=(i+1)%order.length; show(order[i]);});
+    box.style.cursor="pointer"; return;
+  }
+  let raf=0;
+  window.addEventListener("pointermove",e=>{
+    if(raf) return;
+    raf=requestAnimationFrame(()=>{
+      raf=0;
+      const r=box.getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
+      const dx=e.clientX-cx, dy=e.clientY-cy, t=r.width*0.35;
+      const col=dx<-t?0:dx>t?2:1, row=dy<-t?0:dy>t?2:1;
+      show(grid[row][col]);
+    });
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
